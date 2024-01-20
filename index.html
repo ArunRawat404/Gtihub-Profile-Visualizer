@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a615d2a85.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm searchBox" placeholder="Enter the github username">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="bioContainer">
+            <div class="userInfo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpBbnR9Mz01LvukBoJz5egq4mzFdfBMHjkZw&usqp=CAU"
+                    id="avatar" alt="Display Picture">
+                <div class="userDetails">
+                    <h2 id="name">Arun Rawat</h2>
+                    <h3 id="bio">Search for github user in above search bar</h3>
+                    <div class="locationContainer">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3 id="location">Location</h3>
+                    </div>
+                    <a id="socialMedia" target="_blank">Twitter</a>
+                </div>
+            </div>
+            <div class="profileLinkDiv">
+                <i class="fa-solid fa-link"></i>
+                <a id="githubURL" target="_blank">Github</a>
+            </div>
+        </div>
+        <div class="reposContainer">
+
+        </div>
+    </main>
+
+    <div class="loader-container" id="loaderContainer">
+        <div class="loader"></div>
+    </div>
+
+    <div class="pagination-container">
+        <button id="prevBtn">&laquo; Previous</button>
+        <span id="currentPage">1</span>
+        <button id="nextBtn">Next &raquo;</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
